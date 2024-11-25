@@ -1,0 +1,9 @@
+com/socialapp/restful/repository/MessageRepository.class
+com/socialapp/restful/controller/UserController.class
+com/socialapp/restful/domain/User.class
+com/socialapp/restful/MyTomcatWebServerCustomizer.class
+com/socialapp/restful/controller/MessageController.class
+com/socialapp/restful/AppConfig.class
+com/socialapp/restful/repository/UserRepository.class
+com/socialapp/restful/domain/Message.class
+com/socialapp/restful/RestfulApiApplication.class

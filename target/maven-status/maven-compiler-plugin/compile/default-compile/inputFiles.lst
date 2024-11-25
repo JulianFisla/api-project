@@ -1,0 +1,9 @@
+/Users/julianfisla/api-project/socialapp-api/src/main/java/com/socialapp/restful/AppConfig.java
+/Users/julianfisla/api-project/socialapp-api/src/main/java/com/socialapp/restful/MyTomcatWebServerCustomizer.java
+/Users/julianfisla/api-project/socialapp-api/src/main/java/com/socialapp/restful/RestfulApiApplication.java
+/Users/julianfisla/api-project/socialapp-api/src/main/java/com/socialapp/restful/controller/MessageController.java
+/Users/julianfisla/api-project/socialapp-api/src/main/java/com/socialapp/restful/controller/UserController.java
+/Users/julianfisla/api-project/socialapp-api/src/main/java/com/socialapp/restful/domain/Message.java
+/Users/julianfisla/api-project/socialapp-api/src/main/java/com/socialapp/restful/domain/User.java
+/Users/julianfisla/api-project/socialapp-api/src/main/java/com/socialapp/restful/repository/MessageRepository.java
+/Users/julianfisla/api-project/socialapp-api/src/main/java/com/socialapp/restful/repository/UserRepository.java
