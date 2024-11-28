@@ -21,10 +21,6 @@ public class User {
 
     private String email;
 
-    private String firstName;
-
-    private String lastName;
-
     private Date createDate;
 
     private Date updateDate;
@@ -99,37 +95,6 @@ public class User {
         this.email = email;
     }
 
-    /**
-     *
-     * @return
-     */
-    public String getFirstName() {
-        return firstName;
-    }
-
-    /**
-     *
-     * @param firstName
-     */
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public String getLastName() {
-        return lastName;
-    }
-
-    /**
-     *
-     * @param lastName
-     */
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     /**
      *

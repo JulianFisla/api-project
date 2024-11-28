@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.http.HttpStatus;
@@ -36,10 +37,10 @@ public class MessageController {
         }
         // Set default timestamps if not provided
         if (message.getCreateDate() == null) {
-            message.setCreateDate(LocalDateTime.now());
+            message.setCreateDate(new Date());
         }
         if (message.getUpdateDate() == null) {
-            message.setUpdateDate(LocalDateTime.now());
+            message.setUpdateDate(new Date());
         }
         Message savedMessage = messageRepository.save(message);
         return new ResponseEntity<>(savedMessage, HttpStatus.CREATED);
@@ -86,9 +87,9 @@ public class MessageController {
         }
         Message message = optionalMessage.get();
         message.setMessageContent(messageDetails.getMessageContent());
-        message.setSenderId(messageDetails.getSenderId());
-        message.setReceiverId(messageDetails.getReceiverId());
-        message.setUpdateDate(LocalDateTime.now());
+        message.setSenderId(messageDetails.getSenderUsername());
+        message.setReceiverId(messageDetails.getReceiverUsername());
+        message.setUpdateDate(new Date());
         Message updatedMessage = messageRepository.save(message);
         return new ResponseEntity<>(updatedMessage, HttpStatus.OK);
     }
