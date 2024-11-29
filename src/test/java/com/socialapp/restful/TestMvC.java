@@ -77,8 +77,6 @@ class TestMvC {
         user.setUserName("testuser");
         user.setPassword("password123");
         user.setEmail("testuser@example.com");
-        user.setFirstName("Test");
-        user.setLastName("User");
         user.setCreateDate(dateFormat.parse("2020-01-01")); // May be overwritten
         user.setUpdateDate(dateFormat.parse("2020-01-01")); // May be overwritten
 
