@@ -35,8 +35,6 @@ class TestMvC {
                 + "\"userName\": \"testuser\","
                 + "\"password\": \"password123\","
                 + "\"email\": \"testuser@example.com\","
-                + "\"firstName\": \"Test\","
-                + "\"lastName\": \"User\""
                 + "}";
 
         // Create the user
@@ -92,8 +90,6 @@ class TestMvC {
                 .andExpect(jsonPath("$.userName").value("testuser"))
                 .andExpect(jsonPath("$.password").value("password123"))
                 .andExpect(jsonPath("$.email").value("testuser@example.com"))
-                .andExpect(jsonPath("$.firstName").value("Test"))
-                .andExpect(jsonPath("$.lastName").value("User"))
                 .andExpect(jsonPath("$.createDate").exists())
                 .andExpect(jsonPath("$.updateDate").exists())
                 .andReturn();
@@ -109,8 +105,6 @@ class TestMvC {
                 .andExpect(jsonPath("$.userName").value("testuser"))
                 .andExpect(jsonPath("$.password").value("password123"))
                 .andExpect(jsonPath("$.email").value("testuser@example.com"))
-                .andExpect(jsonPath("$.firstName").value("Test"))
-                .andExpect(jsonPath("$.lastName").value("User"))
                 .andExpect(jsonPath("$.createDate").exists())
                 .andExpect(jsonPath("$.updateDate").exists());
 
