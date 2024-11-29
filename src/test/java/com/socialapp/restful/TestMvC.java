@@ -34,7 +34,7 @@ class TestMvC {
         String userJson = "{"
                 + "\"userName\": \"testuser\","
                 + "\"password\": \"password123\","
-                + "\"email\": \"testuser@example.com\","
+                + "\"email\": \"testuser@example.com\""
                 + "}";
 
         // Create the user
@@ -71,7 +71,7 @@ class TestMvC {
 
         // Create a User object with all attributes
         User user = new User();
-        user.setUserId(12345); // This will likely be overwritten by the controller
+        user.setUserId(99899); // This will likely be overwritten by the controller
         user.setUserName("testuser");
         user.setPassword("password123");
         user.setEmail("testuser@example.com");
