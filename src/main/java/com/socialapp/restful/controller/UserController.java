@@ -91,8 +91,6 @@ public class UserController {
         user.setUserName(userDetails.getUserName());
         user.setPassword(userDetails.getPassword());
         user.setEmail(userDetails.getEmail());
-        user.setFirstName(userDetails.getFirstName());
-        user.setLastName(userDetails.getLastName());
         user.setUpdateDate(new Date());
         User updatedUser = userRepository.save(user);
         return new ResponseEntity<>(updatedUser, HttpStatus.OK);
